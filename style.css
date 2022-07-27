@@ -58,6 +58,7 @@ header ul li a
 	font-weight: 900;
 	margin-left: 40px;
 	text-decoration: none;
+	z-index: 7;
 
 }
 header ul li a:hover
