@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Markamizin Oykusu 1999 yilinda Ankara’da basliyor.Baslamamiza neden olan ilk fikir cok basitti ve bu nedenle de son derece muhtesem: yuksek kalitede parfumler,her cebe uygun fiyatlar ve de genis yelpazeli secimler.">
+	<meta name="keywords" content="dp, perfumum, kosova, prizren, prishtine, peje, mitrovice, gjakove, suhareke, koku, parfum, kolonya">
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<meta name="author" content="FB Creative">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>D&P Perfumum Kosove - Her şey unutulur,kokunuz asla!</title>
+</head>
+<body>
+	<section>
+		
+		<header>
+			<a href="index.html"><img src="images/logo.png" class="logoimg" alt="D&P Perfumum"></a>
+			<div class="toggle" onclick="toggleMenu();"></div>
+			<ul class="navigation">
+				<a href="index.html"><img src="images/logo.png" class="logoimgm" alt="D&P Perfumum"></a>
+				<li><a href="index.html">Ana Sayfa</a></li>
+				<li><a href="urunler.html">Urunler</a></li>
+				<li><a href="magazalarimiz.html">Magazalarimiz</a></li>
+				<li><a href="iletisim.html">Iletisim</a></li>
+				<li><a href="hakkimizda.html">Hakkimizda</a></li>
+				<div class="scim">
+			<li><a href="https://www.instagram.com/dpperfumumprizren"><img src="images/instagram.png" alt=""></a></li>
+			</div>
+			</ul>
+
+		</header>
+
+	<div class="resm">
+				<h2>- Satis Noktalarimiz -</h2>
+		<ul>
+			<li class="list active" data-filter="all">Kosova</li>
+			<li class="list" data-filter="mobile">Prizren</li>
+			<li class="list" data-filter="camera">Pristine</li>
+			<li class="list" data-filter="watch">Suhareke</li>
+			<li class="list" data-filter="shoe">Mitrovica</li>
+			<li class="list" data-filter="headphone">Peje</li>
+		</ul>
+
+		<div class="product">
+
+
+			<div class="itemBox mobile"><h2>Baslik</h2><img src="images/mgz/mobile1.jpg" alt=""></div>
+			<div class="itemBox camera"><h2>Baslik</h2><img src="images/mgz/camera1.jpg" alt=""></div>
+			<div class="itemBox watch"><h2>Baslik</h2><img src="images/mgz/watch1.jpg" alt=""></div>
+			<div class="itemBox shoe"><h2>Baslik</h2><img src="images/mgz/shoe1.jpg" alt=""></div>
+			<div class="itemBox headphone"><h2>Baslik</h2><img src="images/mgz/headphone1.jpg" alt=""></div>
+			<div class="itemBox mobile"><h2>Baslik</h2><img src="images/mgz/mobile2.jpg" alt=""></div>
+			<div class="itemBox camera"><h2>Baslik</h2><img src="images/mgz/camera2.jpg" alt=""></div>
+			<div class="itemBox watch"><h2>Baslik</h2><img src="images/mgz/watch2.jpg" alt=""></div>
+			<div class="itemBox shoe"><h2>Baslik</h2><img src="images/mgz/shoe2.jpg" alt=""></div>
+			<div class="itemBox headphone"><h2>Baslik</h2><img src="images/mgz/headphone2.jpg" alt=""></div>
+			<div class="itemBox mobile"><h2>Baslik</h2><img src="images/mgz/mobile3.jpg" alt=""></div>
+			<div class="itemBox camera"><h2>Baslik</h2><img src="images/mgz/camera3.jpg" alt=""></div>
+			<div class="itemBox watch"><h2>Baslik</h2><img src="images/mgz/watch3.jpg" alt=""></div>
+			<div class="itemBox shoe"><h2>Baslik</h2><img src="images/mgz/shoe3.jpg" alt=""></div>
+			<div class="itemBox headphone"><h2>Baslik</h2><img src="images/mgz/headphone3.jpg" alt=""></div>
+			<div class="itemBox mobile"><h2>Baslik</h2><img src="images/mgz/mobile4.jpg" alt=""></div>
+			<div class="itemBox watch"><h2>Baslik</h2><img src="images/mgz/watch4.jpg" alt=""></div>
+			<div class="itemBox shoe"><h2>Baslik</h2><img src="images/mgz/shoe4.jpg" alt=""></div>
+			<div class="itemBox headphone"><h2>Baslik</h2><img src="images/mgz/headphone4.jpg" alt=""></div>
+			<div class="itemBox mobile"><h2>Baslik</h2><img src="images/mgz/mobile5.jpg" alt=""></div>
+		</div>
+	</div>
+<ul class="sci">
+	
+	<li><a href="https://www.instagram.com/dpperfumumprizren"><img src="images/instagram.png" alt=""></a></li>
+</ul>
+
+	</section>
+	<script>
+		function toggleMenu(){
+			var menuToggle = document.querySelector('.toggle');
+			var navigation = document.querySelector('.navigation')
+			menuToggle.classList.toggle('active');
+			navigation.classList.toggle('active');
+		} 
+		
+		var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 9000);    
+    }
+	</script>
+	<!--jquery cdn online -->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<!--buttons show hide products-->
+<script  type="text/javascript">
+	$(document).ready(function(){
+		$('.list').click(function(){
+			const value = $(this).attr('data-filter');
+			if (value == 'all'){
+				$('.itemBox').show('1000');
+			}
+			else{
+				$('.itemBox').not('.'+value).hide('1000');
+				$('.itemBox').filter('.'+value).show('1000');
+			}
+		})
+	})
+	//selected active button
+	$('.list').click(function(){
+		$(this).addClass('active').siblings().removeClass('active')
+	})
+</script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Markamizin Oykusu 1999 yilinda Ankara’da basliyor.Baslamamiza neden olan ilk fikir cok basitti ve bu nedenle de son derece muhtesem: yuksek kalitede parfumler,her cebe uygun fiyatlar ve de genis yelpazeli secimler.">
+	<meta name="keywords" content="dp, perfumum, kosova, prizren, prishtine, peje, mitrovice, gjakove, suhareke, koku, parfum, kolonya">
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<meta name="author" content="FB Creative">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>D&P Perfumum Kosove - Her şey unutulur,kokunuz asla!</title>
+</head>
+<body>
+	<section>
+		
+		<header>
+			<a href="index.html"><img src="images/logo.png" class="logoimg" alt="D&P Perfumum"></a>
+			<div class="toggle" onclick="toggleMenu();"></div>
+			<ul class="navigation">
+				<a href="index.html"><img src="images/logo.png" class="logoimgm" alt="D&P Perfumum"></a>
+				<li><a href="index.html">Ana Sayfa</a></li>
+				<li><a href="urunler.html">Urunler</a></li>
+				<li><a href="magazalarimiz.html">Magazalarimiz</a></li>
+				<li><a href="iletisim.html">Iletisim</a></li>
+				<li><a href="hakkimizda.html">Hakkimizda</a></li>
+				<div class="scim">
+			<li><a href="https://www.instagram.com/dpperfumumprizren"><img src="images/instagram.png" alt=""></a></li>
+			</div>
+			</ul>
+
+		</header>
+		<div class="contentmg">
+					<div class="tittle">
+		<h2>- Prizren - </h2>
+		</div>
+			<div class="card">
+				<img src="images/1.png" alt="">
+				<div class="info">
+					<h1>harun baba</h1>
+				</div>
+			</div>
+			<div class="card">
+				<img src="images/1.png" alt="">
+				<div class="info">
+					<h1>heading</h1>
+				</div>
+			</div>
+			<div class="card">
+				<img src="images/1.png" alt="">
+				<div class="info">
+					<h1>Abi Carsiya</h1>
+				</div>
+			</div>
+		<div class="card">
+				<img src="images/1.png" alt="">
+				<div class="info">
+					<h1>harun baba</h1>
+				</div>
+			</div>
+			<div class="card">
+				<img src="images/1.png" alt="">
+				<div class="info">
+					<h1>harun baba</h1>
+				</div>
+		</div>
+		</div>
+<ul class="sci">
+	
+	<li><a href="https://www.instagram.com/dpperfumumprizren"><img src="images/instagram.png" alt=""></a></li>
+</ul>
+
+	</section>
+	<script>
+		function toggleMenu(){
+			var menuToggle = document.querySelector('.toggle');
+			var navigation = document.querySelector('.navigation')
+			menuToggle.classList.toggle('active');
+			navigation.classList.toggle('active');
+		} 
+		
+		var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 9000);    
+    }
+	</script>
+</body>
+</html>
