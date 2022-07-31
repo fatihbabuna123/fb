@@ -94,6 +94,7 @@ header ul li a:hover
 {
 	position: relative;
 	max-width: 500px;
+	padding-top: 15px;
 }
 .content .textBox h2
 {
