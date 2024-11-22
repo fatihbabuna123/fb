@@ -6,7 +6,7 @@
     box-sizing: border-box;
     text-decoration: none !important;
     font-family: 'poppins',sans-serif;
-    overflow: hidden;
+    
 }
 
 :root {
@@ -20,7 +20,7 @@
 section {
     width: 100%;
     min-height: 100vh;
-
+overflow: hidden;
 }
 
 .mlogo {
