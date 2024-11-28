@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <meta name="theme-color" content="#024059" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+   
+
+    <title>Fh Web Lab</title>
+  </head>
+  <body>
+    <!-- Back to top button -->
+    <button
+      type="button"
+      class="btn btn-success btn-floating btn-lg"
+      id="btn-back-to-top"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <section id="hero">
+      <nav class="navbar nav-bg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#home"
+            ><img src="logo1.png" width="200px" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="menu"><img class="toggleimg" src="menu.png" alt=""/></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+            
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                <img class="mlogo" src="icon3.png" alt="" />
+              </h5>
+              <button
+                type="button"
+                class="btn-close-x"
+                data-bs-dismiss="offcanvas"
+                
+                aria-label="Close"
+              >
+                <img src="close.png" alt="" />
+              </button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ">
+                <li class="nav-item ">
+                  <a class="nav-link" href="#hero">Home</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="#portfolio">Plans</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="#works">Our Works</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <div class="row">
+                  <div class="col social">
+                    <span><a href=""><i class="fa-brands fa-square-facebook"></i></a></span>
+                    <span><a href=""><i class="fa-brands fa-instagram"></i></a></span>
+                    <span><a href=""><i class="fa-brands fa-linkedin"></i></a></span>
+                    <span><a href=""><i class="fa-brands fa-whatsapp"></i></a></span>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+        <div class="row justify-content-center align-items-center p-1">
+          <div class="col-12 col-lg-5 sol pt-5">
+            <h1 class="baslik text-white">We build Your dreams</h1>
+            <p class="text-white mt-5 text-home">
+              With our professional web design solutions, take your business to
+              the next level. With a website, your business becomes accessible
+              24/7 worldwide. Your customers don't have to wait for your store's
+              opening hours to get information about your products or services.
+            </p>
+            <button class="btn btn-get mt-3 btn-get">Get in Touch</button>
+          </div>
+
+          <div class="col-12 col-lg-5 sag pt-4">
+            <div class="justify-content-center d-flex pt-4"><img src="saglogo.png" alt="" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h1 class="d-flex p-5 justify-content-center">About us</h1>
+        <div class="row a-row align-items-center" >
+          <div class="col-12 col-lg-6 bg p-4 h-50 align-items-center about" >
+            <h1 class="abaslik p-4" data-mdb-toggle="animation" data-mdb-animation-start="onScroll" data-mdb-animation-on-scroll="repeat" data-mdb-animation="slide-in-left">About us</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              officia non error maxime ut. Quis blanditiis amet delectus
+              architecto iste?
+            </p>
+          </div>
+          <div
+            class="col-12 col-lg-6 bg-black d-flex justify-content-center h-50 resm" 
+          >
+            <img src="usticon.png" width="400" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="portfolio">
+      <div class="container">
+        <h1 class="tag-portfolio justify-content-center d-flex pt-5">Our Plans</h1>
+        <div class="row justify-content-center align-items-center p-row">
+          <div class="card m-4" style="width: 18rem">
+            <img src="silver.jpg" class="card-img-top pt-2" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Silver</h5>
+              <p class="card-text">
+                Take your business digital with a one-page website and boost
+                your brand recognition.
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Static Web</li>
+              <li class="list-group-item">Single Page Web</li>
+              <li class="list-group-item">One year free maintenance</li>
+            </ul>
+            <div class="card-body">
+              <button class="btn btn-price text-white w-50">Price</button>
+            </div>
+          </div>
+          <div class="card m-4" style="width: 18rem">
+            <img src="gold.jpg" class="card-img-top pt-2" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Gold Web</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+              <button class="btn btn-price text-white w-50">Price</button>
+            </div>
+          </div>
+          <div class="card m-4" style="width: 18rem">
+            <img src="diamond.jpg" class="card-img-top pt-2" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Diamond</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+              <button class="btn btn-price text-white w-50">Price</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="works">
+      <!-- Page Content -->
+      <div class="container">
+        <h1 class="justify-content-center align-items-center d-flex p-5">
+          Our Works
+        </h1>
+
+        <div class="row text-center text-lg-start mt-4 ">
+          <div class="col-lg-3 col-md-4 col-6 ">
+            <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="imgg.jpg" alt="" />
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="imgg.jpg" alt="" />
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="imgg.jpg" alt="" />
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="imgg.jpg" alt="" />
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="imgg.jpg" alt="" />
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="imgg.jpg" alt="" />
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="imgg.jpg" alt="" />
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="imgg.jpg" alt="" />
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="imgg.jpg" alt="" />
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="imgg.jpg" alt="" />
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="imgg.jpg" alt="" />
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="imgg.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center mb-5">
+            <h2 class="heading-section mt-5">Contact with us</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center border contact-right">
+          <div class="col-md-12">
+            <div class="wrapper">
+              <div class="row no-gutters">
+                <div
+                  class="col-lg-8 col-md-7 order-md-last d-flex align-items-stretch"
+                >
+                  <div class="contact-wrap w-100 p-md-5 p-4">
+                    <h3 class="mb-4">Get in touch</h3>
+                    <div id="form-message-warning" class="mb-4"></div>
+                    <div id="form-message-success" class="mb-4">
+                      Your message was sent, thank you!
+                    </div>
+                    <form
+                      method="POST"
+                      id="contactForm"
+                      name="contactForm"
+                      class="contactForm"
+                      novalidate="novalidate"
+                    >
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="name">Full Name</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="name"
+                              id="name"
+                              placeholder="Name"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="email"
+                              >Email Address</label
+                            >
+                            <input
+                              type="email"
+                              class="form-control"
+                              name="email"
+                              id="email"
+                              placeholder="Email"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label class="label" for="subject">Subject</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="subject"
+                              id="subject"
+                              placeholder="Subject"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label class="label" for="#">Message</label>
+                            <textarea
+                              name="message"
+                              class="form-control"
+                              id="message"
+                              cols="30"
+                              rows="4"
+                              placeholder="Message"
+                            ></textarea>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <input
+                              type="submit"
+                              value="Send Message"
+                              class="btn btn-primary mt-4"
+                            />
+                            <div class="submitting"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-5 d-flex align-items-stretch contact-left">
+                  <div class="info-wrap bg-contact w-100 p-md-4 p-4">
+                    <h3>Let's get in touch</h3>
+                    <p class="mb-4">
+                      We're open for any suggestion or just to have a chat
+                    </p>
+                    <div class="dbox w-100 d-flex align-items-start">
+                      <div
+                        class="icon d-flex align-items-center justify-content-center p-4"
+                      >
+                        <span class="fa fa-map-marker"></span>
+                      </div>
+                      <div class="text pl-3">
+                        <p><span>Address:</span> Kosovo , Prizren</p>
+                      </div>
+                    </div>
+                    <div class="dbox w-100 d-flex align-items-center">
+                      <div
+                        class="icon d-flex align-items-center justify-content-center p-4"
+                      >
+                        <span class="fa fa-phone"></span>
+                      </div>
+                      <div class="text pl-3">
+                        <p>
+                          <span>Phone:</span>
+                          <a href="tel://1234567920">+ 1235 2355 98</a>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="dbox w-100 d-flex align-items-center">
+                      <div
+                        class="icon d-flex align-items-center justify-content-center p-4"
+                      >
+                        <span class="fa fa-paper-plane"></span>
+                      </div>
+                      <div class="text pl-3">
+                        <p>
+                          <span>Email:</span>
+                          <a href="mailto:info@yoursite.com"
+                            >info@fhweblab.com</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                    <div class="dbox w-100 d-flex align-items-center">
+                      <div
+                        class="icon d-flex align-items-center justify-content-center p-4"
+                      >
+                        <span class="fa fa-globe"></span>
+                      </div>
+                      <div class="text pl-3">
+                        <p>
+                          <span> Website:</span> <a href="#">yoursite.com</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="py-3">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-white">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-white">Features</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-white">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-white">FAQs</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-white">About</a>
+        </li>
+      </ul>
+      <p class="text-center text-white">
+        © 2024 FH Web Lab. Company - Design by : fh web lab v1.0
+      </p>
+    </footer>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
